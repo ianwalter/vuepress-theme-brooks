@@ -1,6 +1,6 @@
 {
   "name": "@ianwalter/vuepress-theme-brooks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A flexible VuePress theme based on the default theme",
   "keywords": [
     "documentation",
