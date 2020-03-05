@@ -1,6 +1,5 @@
-# @vuepress/theme-default
-
-> theme-default for VuePress
+# @ianwalter/vuepress-theme-brooks
+> A flexible VuePress theme based on the default theme
 
 ## Plugins
 
