@@ -35,5 +35,14 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "@ianwalter/release": "^5.0.0",
+    "@ianwalter/renovate-config": "^1.2.0"
+  },
+  "renovate": {
+    "extends": [
+      "@ianwalter"
+    ]
   }
 }
