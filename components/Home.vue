@@ -44,7 +44,7 @@
         :key="index"
         class="feature"
       >
-        <h2>{{ feature.title }}</h2>
+        <h2 class="brooks">{{ feature.title }}</h2>
         <p>{{ feature.details }}</p>
       </div>
     </div>

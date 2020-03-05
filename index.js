@@ -1,6 +1,9 @@
 const path = require('path')
 
-// Theme API.
+const rules = [
+  'heading_open'
+]
+
 module.exports = (options, ctx) => {
   const { themeConfig, siteConfig } = ctx
 
@@ -54,6 +57,15 @@ module.exports = (options, ctx) => {
         after: () => '</details>\n'
       }],
       ['smooth-scroll', enableSmoothScroll]
-    ]
+    ],
+    extendMarkdown: md => {
+      for (const rule of rules) {
+        md.renderer.rules[rule] = (tokens, index, options, env, renderer) => {
+          tokens[index].attrJoin('class', 'brooks')
+          return renderer.renderToken(tokens, index, options)
+        }
+      }
+      return md
+    }
   }
 }
