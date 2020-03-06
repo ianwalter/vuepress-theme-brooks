@@ -21,7 +21,7 @@ describe('DropdownLink', () => {
     const wrapper = mount(DropdownLink, {
       localVue: createLocalVue(),
       stubs: {
-        'RouterLink': RouterLinkStub
+        RouterLink: RouterLinkStub
       },
       propsData: { item }
     })

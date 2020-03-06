@@ -9,10 +9,10 @@ module.exports = (options, ctx) => {
 
   // resolve algolia
   const isAlgoliaSearch = (
-    themeConfig.algolia
-    || Object
-        .keys(siteConfig.locales && themeConfig.locales || {})
-        .some(base => themeConfig.locales[base].algolia)
+    themeConfig.algolia ||
+    Object
+      .keys(siteConfig.locales && themeConfig.locales || {})
+      .some(base => themeConfig.locales[base].algolia)
   )
 
   const enableSmoothScroll = themeConfig.smoothScroll === true
