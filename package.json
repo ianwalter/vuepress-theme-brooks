@@ -4,7 +4,8 @@
   "description": "A flexible VuePress theme based on the default theme",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "start": "vuepress dev"
   },
   "keywords": [
     "documentation",
@@ -31,6 +32,7 @@
     "@vuepress/plugin-search": "^1.3.1",
     "docsearch.js": "^2.5.2",
     "lodash": "^4.17.15",
+    "markdown-it-task-lists": "^2.1.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "vuepress-plugin-container": "^2.0.2",
@@ -42,7 +44,8 @@
   "devDependencies": {
     "@ianwalter/eslint-config-vue": "^2.0.1",
     "@ianwalter/release": "^5.0.0",
-    "@ianwalter/renovate-config": "^1.2.0"
+    "@ianwalter/renovate-config": "^1.2.0",
+    "vuepress": "^1.3.1"
   },
   "eslintConfig": {
     "root": true,

@@ -11,7 +11,7 @@
         ←
         <a
           v-if="prev.type === 'external'"
-          class="prev"
+          class="brooks prev"
           :href="prev.path"
           target="_blank"
           rel="noopener noreferrer"
@@ -23,7 +23,7 @@
 
         <RouterLink
           v-else
-          class="prev"
+          class="brooks prev"
           :to="prev.path"
         >
           {{ prev.title || prev.path }}
@@ -38,6 +38,7 @@
           v-if="next.type === 'external'"
           :href="next.path"
           target="_blank"
+          class="brooks"
           rel="noopener noreferrer"
         >
           {{ next.title || next.path }}
@@ -48,6 +49,7 @@
         <RouterLink
           v-else
           :to="next.path"
+          class="brooks"
         >
           {{ next.title || next.path }}
         </RouterLink>

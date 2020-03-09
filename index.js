@@ -1,31 +1,14 @@
-const path = require('path')
-
 const rules = [
+  'link_open',
   'heading_open'
 ]
 
 module.exports = (options, ctx) => {
-  const { themeConfig, siteConfig } = ctx
-
-  // resolve algolia
-  const isAlgoliaSearch = (
-    themeConfig.algolia ||
-    Object
-      .keys(siteConfig.locales && themeConfig.locales || {})
-      .some(base => themeConfig.locales[base].algolia)
-  )
+  const { themeConfig } = ctx
 
   const enableSmoothScroll = themeConfig.smoothScroll === true
 
   return {
-    alias () {
-      return {
-        '@AlgoliaSearchBox': isAlgoliaSearch
-          ? path.resolve(__dirname, 'components/AlgoliaSearchBox.vue')
-          : path.resolve(__dirname, 'noopModule.js')
-      }
-    },
-
     plugins: [
       ['@vuepress/active-header-links', options.activeHeaderLinks],
       '@vuepress/search',
@@ -65,7 +48,7 @@ module.exports = (options, ctx) => {
           return renderer.renderToken(tokens, index, options)
         }
       }
-      return md
+      return md.use(require('markdown-it-task-lists'), { enabled: true })
     }
   }
 }
