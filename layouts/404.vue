@@ -1,13 +1,18 @@
 <template>
   <div class="theme-container">
     <div class="theme-default-content">
+
       <h1>404</h1>
 
       <blockquote>{{ getMsg() }}</blockquote>
 
-      <RouterLink to="/">
+      <RouterLink
+        to="/"
+        class="brooks"
+      >
         Take me home.
       </RouterLink>
+
     </div>
   </div>
 </template>
