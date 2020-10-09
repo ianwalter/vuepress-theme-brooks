@@ -42,7 +42,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "@ianwalter/eslint-config-vue": "^2.0.1",
+    "@ianwalter/eslint-config-vue": "^2.1.0",
     "@ianwalter/release": "^5.0.2",
     "@ianwalter/renovate-config": "^1.4.0",
     "vuepress": "^1.6.0"
