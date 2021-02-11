@@ -44,7 +44,7 @@
   "devDependencies": {
     "@ianwalter/eslint-config-vue": "^2.1.0",
     "@ianwalter/release": "^5.0.2",
-    "@ianwalter/renovate-config": "^1.4.3",
+    "@ianwalter/renovate-config": "^1.4.4",
     "vuepress": "^1.8.0"
   },
   "eslintConfig": {
